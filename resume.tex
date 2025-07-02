@@ -1,0 +1,160 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% ModernCV theme and style
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+% Character encoding
+\usepackage[utf8]{inputenc}
+
+% Page margins
+\usepackage[scale=0.85]{geometry}
+
+% For customizing colors
+\usepackage{xcolor}
+\definecolor{darkblue}{rgb}{0.17,0.24,0.31}
+\definecolor{lightblue}{rgb}{0.20,0.60,0.86}
+
+% Personal information
+\name{Your}{Name}
+\title{Professional Title / Job Role}
+\address{Street Address}{City, State ZIP}{Country}
+\phone[mobile]{(555) 123-4567}
+\email{your.email@example.com}
+\social[linkedin]{yourprofile}
+\social[github]{yourgithub}
+\extrainfo{Portfolio: yourportfolio.com}
+
+% Photo (uncomment if you want to include one)
+% \photo[64pt][0.4pt]{picture}
+
+% Quote (optional)
+\quote{"Passionate about technology and innovation"}
+
+%----------------------------------------------------------------------------------
+%            Content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\makecvtitle
+
+%----------------------------------------------------------------------------------
+%            Professional Summary
+%----------------------------------------------------------------------------------
+\section{Professional Summary}
+\cvitem{}{Dynamic and results-oriented professional with [X] years of experience in [your field]. Proven track record of delivering high-quality solutions and driving innovation in fast-paced environments. Strong analytical and problem-solving skills with expertise in [key technologies/skills]. Passionate about continuous learning and staying current with industry trends and best practices.}
+
+%----------------------------------------------------------------------------------
+%            Education
+%----------------------------------------------------------------------------------
+\section{Education}
+\cventry{Graduation Year}{Bachelor of Science in Computer Science}{University Name}{City, State}{Grade/GPA}{}
+\cventry{Year}{Relevant Coursework / Additional Education}{Institution Name}{City, State}{Grade/Certificate}{}
+
+%----------------------------------------------------------------------------------
+%            Technical Skills
+%----------------------------------------------------------------------------------
+\section{Technical Skills}
+\cvdoubleitem{Programming Languages}{Python, JavaScript, Java, C++}{Web Technologies}{HTML5/CSS3, React/Angular, Node.js}
+\cvdoubleitem{Databases}{MySQL, PostgreSQL, MongoDB, Redis}{Tools \& Platforms}{Git/GitHub, Docker, AWS, CI/CD}
+\cvdoubleitem{Frameworks}{Django, Flask, Express.js, Spring}{Operating Systems}{Linux, Windows, macOS}
+
+%----------------------------------------------------------------------------------
+%            Work Experience
+%----------------------------------------------------------------------------------
+\section{Work Experience}
+
+\cventry{Start Date--End Date}{Job Title}{Company Name}{City, State}{}{
+\begin{itemize}
+\item Developed and maintained web applications using modern technologies
+\item Collaborated with cross-functional teams to deliver high-quality software solutions
+\item Implemented automated testing procedures that improved code quality by 30\%
+\item Led team of 3 developers in successful project delivery within tight deadlines
+\end{itemize}}
+
+\cventry{Start Date--End Date}{Previous Job Title}{Previous Company Name}{City, State}{}{
+\begin{itemize}
+\item Designed and implemented database solutions for improved data management
+\item Optimized application performance resulting in 40\% faster load times
+\item Mentored junior developers and conducted code reviews
+\item Participated in agile development processes and sprint planning
+\end{itemize}}
+
+%----------------------------------------------------------------------------------
+%            Projects
+%----------------------------------------------------------------------------------
+\section{Key Projects}
+
+\cventry{Project Duration}{Project Name}{Technologies: React, Node.js, MongoDB}{}{}{
+\begin{itemize}
+\item Built a full-stack web application with user authentication and real-time features
+\item Implemented responsive design ensuring compatibility across all devices
+\item Deployed application using modern DevOps practices
+\end{itemize}}
+
+\cventry{Project Duration}{Another Project Name}{Technologies: Python, Django, PostgreSQL}{}{}{
+\begin{itemize}
+\item Developed a data analytics platform for business intelligence
+\item Implemented RESTful APIs for seamless data integration
+\item Created interactive dashboards for data visualization
+\end{itemize}}
+
+%----------------------------------------------------------------------------------
+%            Certifications
+%----------------------------------------------------------------------------------
+\section{Certifications}
+\cventry{Issue Date}{AWS Certified Solutions Architect}{Amazon Web Services}{}{}{Valid until: Expiration Date}
+\cventry{Issue Date}{Professional Certification Name}{Certifying Organization}{}{}{Valid until: Expiration Date}
+
+%----------------------------------------------------------------------------------
+%            Languages
+%----------------------------------------------------------------------------------
+\section{Languages}
+\cvitemwithcomment{English}{Native}{}
+\cvitemwithcomment{Spanish}{Intermediate}{Conversational proficiency}
+\cvitemwithcomment{French}{Basic}{Basic conversational skills}
+
+%----------------------------------------------------------------------------------
+%            Interests and Activities
+%----------------------------------------------------------------------------------
+\section{Interests and Activities}
+\cvitem{Technology}{Open source contributions, hackathons, tech meetups}
+\cvitem{Volunteer Work}{Coding instructor at local community center}
+\cvitem{Hobbies}{Photography, hiking, chess}
+
+%----------------------------------------------------------------------------------
+%            Additional Information
+%----------------------------------------------------------------------------------
+\section{Additional Information}
+\cvitem{Publications}{\textit{Title of Research Paper}, Conference/Journal Name, Year}
+\cvitem{Awards}{Best Innovation Award, Company Name, Year}
+\cvitem{References}{Available upon request}
+
+\end{document}
+
+% Compilation Instructions:
+% 1. Install LaTeX distribution (TeX Live, MiKTeX, or MacTeX)
+% 2. Install moderncv package: tlmgr install moderncv
+% 3. Compile using: pdflatex resume.tex
+% 
+% Alternative compilation methods:
+% - Online: Upload to Overleaf (overleaf.com)
+% - VS Code: Use LaTeX Workshop extension
+% - Command line: pdflatex resume.tex (run twice for proper references)
+%
+% Customization Tips:
+% 1. Change \moderncvstyle{} to: casual, classic, oldstyle, banking
+% 2. Change \moderncvcolor{} to: blue, orange, green, red, purple, grey, black
+% 3. Adjust \usepackage[scale=0.85]{geometry} to change margins
+% 4. Uncomment \photo{} line to include a profile picture
+% 5. Modify section order by moving \section{} blocks
+%
+% Color Customization:
+% \definecolor{color1}{rgb}{0.17,0.24,0.31}  % Dark blue
+% \definecolor{color2}{rgb}{0.20,0.60,0.86}  % Light blue
+%
+% Font Customization:
+% Add after \documentclass: \usepackage{helvet} \renewcommand{\familydefault}{\sfdefault}
+%
+% ATS-Friendly Version:
+% Use \moderncvstyle{classic} and avoid complex formatting
